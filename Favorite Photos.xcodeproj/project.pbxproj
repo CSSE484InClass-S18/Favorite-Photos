@@ -7,14 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4958C1E4AFAC91DF707E51EF /* Pods_Favorite_Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 726B71803C8D13B0E52DF6E8 /* Pods_Favorite_Photos.framework */; };
 		FD53E11420976D1600059B8E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD53E11320976D1600059B8E /* AppDelegate.swift */; };
 		FD53E11620976D1600059B8E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD53E11520976D1600059B8E /* ViewController.swift */; };
 		FD53E11920976D1600059B8E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD53E11720976D1600059B8E /* Main.storyboard */; };
 		FD53E11B20976D1700059B8E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD53E11A20976D1700059B8E /* Assets.xcassets */; };
 		FD53E11E20976D1700059B8E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD53E11C20976D1700059B8E /* LaunchScreen.storyboard */; };
+		FD53E12620976E7500059B8E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FD53E12520976E7500059B8E /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		44727C33C6FED176DF396FBD /* Pods-Favorite Photos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Favorite Photos.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Favorite Photos/Pods-Favorite Photos.debug.xcconfig"; sourceTree = "<group>"; };
+		631870C9B8B1C451DB6B3A6E /* Pods-Favorite Photos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Favorite Photos.release.xcconfig"; path = "Pods/Target Support Files/Pods-Favorite Photos/Pods-Favorite Photos.release.xcconfig"; sourceTree = "<group>"; };
+		726B71803C8D13B0E52DF6E8 /* Pods_Favorite_Photos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Favorite_Photos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD53E11020976D1600059B8E /* Favorite Photos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Favorite Photos.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD53E11320976D1600059B8E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FD53E11520976D1600059B8E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +27,7 @@
 		FD53E11A20976D1700059B8E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FD53E11D20976D1700059B8E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FD53E11F20976D1700059B8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD53E12520976E7500059B8E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4958C1E4AFAC91DF707E51EF /* Pods_Favorite_Photos.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4CA383DC852D46565099C5B0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				44727C33C6FED176DF396FBD /* Pods-Favorite Photos.debug.xcconfig */,
+				631870C9B8B1C451DB6B3A6E /* Pods-Favorite Photos.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B31B0DFDEBCE3C525E9B145D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				726B71803C8D13B0E52DF6E8 /* Pods_Favorite_Photos.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FD53E10720976D1600059B8E = {
 			isa = PBXGroup;
 			children = (
 				FD53E11220976D1600059B8E /* Favorite Photos */,
 				FD53E11120976D1600059B8E /* Products */,
+				4CA383DC852D46565099C5B0 /* Pods */,
+				B31B0DFDEBCE3C525E9B145D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +80,7 @@
 		FD53E11220976D1600059B8E /* Favorite Photos */ = {
 			isa = PBXGroup;
 			children = (
+				FD53E12520976E7500059B8E /* GoogleService-Info.plist */,
 				FD53E11320976D1600059B8E /* AppDelegate.swift */,
 				FD53E11520976D1600059B8E /* ViewController.swift */,
 				FD53E11720976D1600059B8E /* Main.storyboard */,
@@ -71,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FD53E12220976D1700059B8E /* Build configuration list for PBXNativeTarget "Favorite Photos" */;
 			buildPhases = (
+				225009EAF76DA3F58D5889BB /* [CP] Check Pods Manifest.lock */,
 				FD53E10C20976D1600059B8E /* Sources */,
 				FD53E10D20976D1600059B8E /* Frameworks */,
 				FD53E10E20976D1600059B8E /* Resources */,
+				D8FB34912C8FC6052E17CCC0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -123,12 +152,70 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD53E11E20976D1700059B8E /* LaunchScreen.storyboard in Resources */,
+				FD53E12620976E7500059B8E /* GoogleService-Info.plist in Resources */,
 				FD53E11B20976D1700059B8E /* Assets.xcassets in Resources */,
 				FD53E11920976D1600059B8E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		225009EAF76DA3F58D5889BB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Favorite Photos-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D8FB34912C8FC6052E17CCC0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Favorite Photos/Pods-Favorite Photos-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL/openssl.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC/GRPCClient.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-ProtoRPC/ProtoRPC.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-RxLibrary/RxLibrary.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GRPCClient.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProtoRPC.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxLibrary.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Favorite Photos/Pods-Favorite Photos-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FD53E10C20976D1600059B8E /* Sources */ = {
@@ -278,15 +365,13 @@
 		};
 		FD53E12320976D1700059B8E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 44727C33C6FED176DF396FBD /* Pods-Favorite Photos.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TGL44JG796;
 				INFOPLIST_FILE = "Favorite Photos/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "edu.rose-hulman.fisherds.Favorite-Photos";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -296,15 +381,13 @@
 		};
 		FD53E12420976D1700059B8E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 631870C9B8B1C451DB6B3A6E /* Pods-Favorite Photos.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TGL44JG796;
 				INFOPLIST_FILE = "Favorite Photos/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "edu.rose-hulman.fisherds.Favorite-Photos";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
