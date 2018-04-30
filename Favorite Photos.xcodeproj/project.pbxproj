@@ -9,11 +9,12 @@
 /* Begin PBXBuildFile section */
 		4958C1E4AFAC91DF707E51EF /* Pods_Favorite_Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 726B71803C8D13B0E52DF6E8 /* Pods_Favorite_Photos.framework */; };
 		FD53E11420976D1600059B8E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD53E11320976D1600059B8E /* AppDelegate.swift */; };
-		FD53E11620976D1600059B8E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD53E11520976D1600059B8E /* ViewController.swift */; };
 		FD53E11920976D1600059B8E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD53E11720976D1600059B8E /* Main.storyboard */; };
 		FD53E11B20976D1700059B8E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD53E11A20976D1700059B8E /* Assets.xcassets */; };
 		FD53E11E20976D1700059B8E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD53E11C20976D1700059B8E /* LaunchScreen.storyboard */; };
 		FD53E12620976E7500059B8E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FD53E12520976E7500059B8E /* GoogleService-Info.plist */; };
+		FD53E1282097717F00059B8E /* FavoritePhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD53E1272097717F00059B8E /* FavoritePhotoViewController.swift */; };
+		FD53E12A2097719200059B8E /* PhotoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD53E1292097719200059B8E /* PhotoListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,12 +23,13 @@
 		726B71803C8D13B0E52DF6E8 /* Pods_Favorite_Photos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Favorite_Photos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD53E11020976D1600059B8E /* Favorite Photos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Favorite Photos.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD53E11320976D1600059B8E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FD53E11520976D1600059B8E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FD53E11820976D1600059B8E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FD53E11A20976D1700059B8E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FD53E11D20976D1700059B8E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FD53E11F20976D1700059B8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FD53E12520976E7500059B8E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FD53E1272097717F00059B8E /* FavoritePhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritePhotoViewController.swift; sourceTree = "<group>"; };
+		FD53E1292097719200059B8E /* PhotoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,11 +84,12 @@
 			children = (
 				FD53E12520976E7500059B8E /* GoogleService-Info.plist */,
 				FD53E11320976D1600059B8E /* AppDelegate.swift */,
-				FD53E11520976D1600059B8E /* ViewController.swift */,
 				FD53E11720976D1600059B8E /* Main.storyboard */,
 				FD53E11A20976D1700059B8E /* Assets.xcassets */,
 				FD53E11C20976D1700059B8E /* LaunchScreen.storyboard */,
 				FD53E11F20976D1700059B8E /* Info.plist */,
+				FD53E1272097717F00059B8E /* FavoritePhotoViewController.swift */,
+				FD53E1292097719200059B8E /* PhotoListViewController.swift */,
 			);
 			path = "Favorite Photos";
 			sourceTree = "<group>";
@@ -222,8 +225,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD53E11620976D1600059B8E /* ViewController.swift in Sources */,
 				FD53E11420976D1600059B8E /* AppDelegate.swift in Sources */,
+				FD53E1282097717F00059B8E /* FavoritePhotoViewController.swift in Sources */,
+				FD53E12A2097719200059B8E /* PhotoListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -371,7 +375,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TGL44JG796;
 				INFOPLIST_FILE = "Favorite Photos/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "edu.rose-hulman.fisherds.Favorite-Photos";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -387,7 +394,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TGL44JG796;
 				INFOPLIST_FILE = "Favorite Photos/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "edu.rose-hulman.fisherds.Favorite-Photos";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
