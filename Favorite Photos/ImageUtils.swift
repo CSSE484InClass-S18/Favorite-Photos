@@ -31,4 +31,39 @@ class ImageUtils: NSObject {
     }
   }
 
+
+  static func resize(image: UIImage, maxHeight: Float = 500.0, maxWidth: Float = 500.0, compressionQuality: Float = 0.5) -> Data? {
+    var actualHeight: Float = Float(image.size.height)
+    var actualWidth: Float = Float(image.size.width)
+    var imgRatio: Float = actualWidth / actualHeight
+    let maxRatio: Float = maxWidth / maxHeight
+
+    if actualHeight > maxHeight || actualWidth > maxWidth {
+      if imgRatio < maxRatio {
+        //adjust width according to maxHeight
+        imgRatio = maxHeight / actualHeight
+        actualWidth = imgRatio * actualWidth
+        actualHeight = maxHeight
+      }
+      else if imgRatio > maxRatio {
+        //adjust height according to maxWidth
+        imgRatio = maxWidth / actualWidth
+        actualHeight = imgRatio * actualHeight
+        actualWidth = maxWidth
+      }
+      else {
+        actualHeight = maxHeight
+        actualWidth = maxWidth
+      }
+    }
+    let rect = CGRect(x: 0.0, y: 0.0, width: CGFloat(actualWidth), height: CGFloat(actualHeight))
+    UIGraphicsBeginImageContext(rect.size)
+    image.draw(in:rect)
+    let img = UIGraphicsGetImageFromCurrentImageContext()
+    let imageData = UIImageJPEGRepresentation(img!,CGFloat(compressionQuality))
+    UIGraphicsEndImageContext()
+    return imageData
+  }
+
+
 }
