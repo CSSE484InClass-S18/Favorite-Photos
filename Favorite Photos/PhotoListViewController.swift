@@ -7,26 +7,33 @@
 //
 
 import UIKit
+import Firebase
 
 class PhotoListViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
 
   let photoCellIdentifier = "PhotoCell"
   @IBOutlet weak var collectionView: UICollectionView!
 
+  var dataSnapshots = [DocumentSnapshot]()
+
   override func viewDidLoad() {
     super.viewDidLoad()
   }
 
+  @IBAction func takePhoto(_ sender: Any) {
+  }
   func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-    return 5
+    return dataSnapshots.count
   }
 
   func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
     let cell = collectionView.dequeueReusableCell(withReuseIdentifier: photoCellIdentifier, for: indexPath) as! PhotoViewCell
 
     // Configure the cell
-    cell.captionLabel.text = "Best Photo Ever!"
-    cell.imageView.image = #imageLiteral(resourceName: "fab")
+//    cell.captionLabel.text = "Best Photo Ever!"
+//    cell.imageView.image = #imageLiteral(resourceName: "fab")
+
+    cell.disply(snapshot: dataSnapshots[indexPath.row])
 
     return cell
   }

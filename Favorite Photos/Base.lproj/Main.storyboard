@@ -75,6 +75,9 @@
                                     <constraint firstAttribute="width" secondItem="ilJ-GR-4rq" secondAttribute="height" multiplier="100:91" id="jN3-3W-YNJ"/>
                                 </constraints>
                                 <state key="normal" image="fab"/>
+                                <connections>
+                                    <action selector="takePhoto:" destination="Ldm-Yy-iHn" eventType="touchUpInside" id="7rr-hU-5Rg"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
