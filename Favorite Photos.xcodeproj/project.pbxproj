@@ -16,6 +16,7 @@
 		FD53E1282097717F00059B8E /* FavoritePhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD53E1272097717F00059B8E /* FavoritePhotoViewController.swift */; };
 		FD53E12A2097719200059B8E /* PhotoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD53E1292097719200059B8E /* PhotoListViewController.swift */; };
 		FDB97072209B5AD000E4FEB7 /* PhotoViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB97071209B5AD000E4FEB7 /* PhotoViewCell.swift */; };
+		FDB97074209B617200E4FEB7 /* ImagePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB97073209B617200E4FEB7 /* ImagePickerViewController.swift */; };
 		FDC3B5342098BBF600C1CB24 /* ImageUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC3B5332098BBF600C1CB24 /* ImageUtils.swift */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +34,7 @@
 		FD53E1272097717F00059B8E /* FavoritePhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritePhotoViewController.swift; sourceTree = "<group>"; };
 		FD53E1292097719200059B8E /* PhotoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoListViewController.swift; sourceTree = "<group>"; };
 		FDB97071209B5AD000E4FEB7 /* PhotoViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewCell.swift; sourceTree = "<group>"; };
+		FDB97073209B617200E4FEB7 /* ImagePickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerViewController.swift; sourceTree = "<group>"; };
 		FDC3B5332098BBF600C1CB24 /* ImageUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUtils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -96,6 +98,7 @@
 				FD53E1292097719200059B8E /* PhotoListViewController.swift */,
 				FDC3B5332098BBF600C1CB24 /* ImageUtils.swift */,
 				FDB97071209B5AD000E4FEB7 /* PhotoViewCell.swift */,
+				FDB97073209B617200E4FEB7 /* ImagePickerViewController.swift */,
 			);
 			path = "Favorite Photos";
 			sourceTree = "<group>";
@@ -233,6 +236,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDB97074209B617200E4FEB7 /* ImagePickerViewController.swift in Sources */,
 				FD53E11420976D1600059B8E /* AppDelegate.swift in Sources */,
 				FD53E1282097717F00059B8E /* FavoritePhotoViewController.swift in Sources */,
 				FD53E12A2097719200059B8E /* PhotoListViewController.swift in Sources */,
