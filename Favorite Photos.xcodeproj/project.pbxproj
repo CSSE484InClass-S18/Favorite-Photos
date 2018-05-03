@@ -15,6 +15,7 @@
 		FD53E12620976E7500059B8E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FD53E12520976E7500059B8E /* GoogleService-Info.plist */; };
 		FD53E1282097717F00059B8E /* FavoritePhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD53E1272097717F00059B8E /* FavoritePhotoViewController.swift */; };
 		FD53E12A2097719200059B8E /* PhotoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD53E1292097719200059B8E /* PhotoListViewController.swift */; };
+		FDB97072209B5AD000E4FEB7 /* PhotoViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB97071209B5AD000E4FEB7 /* PhotoViewCell.swift */; };
 		FDC3B5342098BBF600C1CB24 /* ImageUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC3B5332098BBF600C1CB24 /* ImageUtils.swift */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +32,7 @@
 		FD53E12520976E7500059B8E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FD53E1272097717F00059B8E /* FavoritePhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritePhotoViewController.swift; sourceTree = "<group>"; };
 		FD53E1292097719200059B8E /* PhotoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoListViewController.swift; sourceTree = "<group>"; };
+		FDB97071209B5AD000E4FEB7 /* PhotoViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewCell.swift; sourceTree = "<group>"; };
 		FDC3B5332098BBF600C1CB24 /* ImageUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUtils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -93,6 +95,7 @@
 				FD53E1272097717F00059B8E /* FavoritePhotoViewController.swift */,
 				FD53E1292097719200059B8E /* PhotoListViewController.swift */,
 				FDC3B5332098BBF600C1CB24 /* ImageUtils.swift */,
+				FDB97071209B5AD000E4FEB7 /* PhotoViewCell.swift */,
 			);
 			path = "Favorite Photos";
 			sourceTree = "<group>";
@@ -234,6 +237,7 @@
 				FD53E1282097717F00059B8E /* FavoritePhotoViewController.swift in Sources */,
 				FD53E12A2097719200059B8E /* PhotoListViewController.swift in Sources */,
 				FDC3B5342098BBF600C1CB24 /* ImageUtils.swift in Sources */,
+				FDB97072209B5AD000E4FEB7 /* PhotoViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -381,7 +385,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TGL44JG796;
 				INFOPLIST_FILE = "Favorite Photos/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "edu.rose-hulman.fisherds.Favorite-Photos";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -397,7 +404,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TGL44JG796;
 				INFOPLIST_FILE = "Favorite Photos/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "edu.rose-hulman.fisherds.Favorite-Photos";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

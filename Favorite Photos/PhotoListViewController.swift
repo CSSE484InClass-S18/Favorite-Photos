@@ -8,28 +8,35 @@
 
 import UIKit
 
-class PhotoListViewController: UIViewController {
+class PhotoListViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+  let photoCellIdentifier = "PhotoCell"
+  @IBOutlet weak var collectionView: UICollectionView!
 
-        // Do any additional setup after loading the view.
-    }
+  override func viewDidLoad() {
+    super.viewDidLoad()
+  }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
+  func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    return 5
+  }
 
-    /*
-    // MARK: - Navigation
+  func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+    let cell = collectionView.dequeueReusableCell(withReuseIdentifier: photoCellIdentifier, for: indexPath) as! PhotoViewCell
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
+    // Configure the cell
+    cell.captionLabel.text = "Best Photo Ever!"
+    cell.imageView.image = #imageLiteral(resourceName: "fab")
+
+    return cell
+  }
 
 }
+
+
+
+
+
+
+
+
